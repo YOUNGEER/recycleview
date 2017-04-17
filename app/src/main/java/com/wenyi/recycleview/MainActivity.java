@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.wenyi.recycleview.base.BaseAdapterActivity;
+import com.wenyi.recycleview.itemtouchhelper.TouchHelperActivity;
+import com.wenyi.recycleview.showbase.ShowBaseActivity;
 
 public class MainActivity extends AppCompatActivity {
     private TextView showAdapter;
@@ -22,7 +23,14 @@ public class MainActivity extends AppCompatActivity {
         showAdapter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BaseAdapterActivity.class));
+                startActivity(new Intent(MainActivity.this, ShowBaseActivity.class));
+            }
+        });
+
+        itemTouchHelper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TouchHelperActivity.class));
             }
         });
     }

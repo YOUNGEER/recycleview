@@ -1,4 +1,4 @@
-package com.wenyi.recycleview.base;
+package com.wenyi.recycleview.showbase;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class BaseAdapterActivity extends AppCompatActivity {
+public class ShowBaseActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ShowBaseAdapter madapter;
     private List<ListBean> mBeen = new ArrayList<>();

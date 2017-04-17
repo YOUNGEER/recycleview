@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".base.BaseAdapterActivity">
+        <activity android:name=".showbase.ShowBaseActivity">
         </activity>
+        <activity android:name=".itemtouchhelper.TouchHelperActivity"/>
     </application>
 
 </manifest>
